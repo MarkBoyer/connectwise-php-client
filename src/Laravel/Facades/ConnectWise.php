@@ -2,6 +2,7 @@
 
 namespace Spinen\ConnectWise\Laravel\Facades;
 
+use Spinen\ConnectWise\Api\Client;
 use Illuminate\Support\Facades\Facade;
 
 /**
@@ -18,6 +19,7 @@ class ConnectWise extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'connectwise';
+//         return 'connectwise';
+        return Client::class;
     }
 }
